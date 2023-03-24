@@ -9,6 +9,10 @@ body {
     margin-bottom: 0;
 }
 
+.headline-text {
+    font-family: 'Russo One', sans-serif;
+}
+
 .cursive-logo {
     font-family: 'Lobster', cursive;
     font-size: 30px;
@@ -18,4 +22,17 @@ body {
 .navbar {
     background: rgb(255,255,255);
     background: linear-gradient(151deg, rgba(255,255,255,0.5018382352941176) 25%, rgba(0,57,166,0.3029586834733894) 50%, rgba(213,43,30,0.35057773109243695) 75%);
+}
+
+.how-to-play-container {
+    margin: 25px;
+}
+
+.how-to-play-header {
+    text-align: center;
+}
+
+.how-to-play-cards {
+    display: flex;
+    justify-content: space-evenly;
 }
