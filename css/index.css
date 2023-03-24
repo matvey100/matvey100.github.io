@@ -13,6 +13,10 @@ body {
     font-family: 'Russo One', sans-serif;
 }
 
+.cursive-text {
+    font-family: 'Lobster', cursive;
+}
+
 .cursive-logo {
     font-family: 'Lobster', cursive;
     font-size: 30px;
