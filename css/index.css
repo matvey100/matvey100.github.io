@@ -14,3 +14,8 @@ body {
     font-size: 30px;
     margin-right: 5px;
 }
+
+.navbar {
+    background: rgb(255,255,255);
+    background: linear-gradient(151deg, rgba(255,255,255,0.5018382352941176) 25%, rgba(0,57,166,0.3029586834733894) 50%, rgba(213,43,30,0.35057773109243695) 75%);
+}
