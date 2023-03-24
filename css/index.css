@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+.head-logo {
+    font-family: 'Russo One', sans-serif;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.cursive-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    margin-right: 5px;
+}
