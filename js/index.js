@@ -28,15 +28,15 @@ let playButton = document.querySelector(`#play-button`);
 let card1Themes = [
     {
         title: `Theme 1`,
-        image: `assets/cards/card-1/one.png`
+        image: `assets/cards/card-1/one.jpg`
     },
     {
         title: `Theme 2`,
-        image: `assets/cards/card-1/two.png`
+        image: `assets/cards/card-1/two.jpg`
     },
     {
         title: `Theme 3`,
-        image: `assets/cards/card-1/three.png`
+        image: `assets/cards/card-1/three.jpg`
     },
     {
         title: `Theme 4`,
@@ -51,15 +51,15 @@ let card1Themes = [
 let card2Themes = [
     {
         title: `Theme 1`,
-        image: `assets/cards/card-2/one.png`
+        image: `assets/cards/card-2/one.jpg`
     },
     {
         title: `Theme 2`,
-        image: `assets/cards/card-2/two.png`
+        image: `assets/cards/card-2/two.jpg`
     },
     {
         title: `Theme 3`,
-        image: `assets/cards/card-2/three.png`
+        image: `assets/cards/card-2/three.jpg`
     },
     {
         title: `Theme 4`,
@@ -74,15 +74,15 @@ let card2Themes = [
 let card3Themes = [
     {
         title: `Theme 1`,
-        image: `assets/cards/card-3/one.png`
+        image: `assets/cards/card-3/one.jpg`
     },
     {
         title: `Theme 2`,
-        image: `assets/cards/card-3/two.png`
+        image: `assets/cards/card-3/two.jpg`
     },
     {
         title: `Theme 3`,
-        image: `assets/cards/card-3/three.png`
+        image: `assets/cards/card-3/three.jpg`
     },
     {
         title: `Theme 4`,
@@ -97,15 +97,15 @@ let card3Themes = [
 let card4Themes = [
     {
         title: `Theme 1`,
-        image: `assets/cards/card-4/one.png`
+        image: `assets/cards/card-4/one.jpg`
     },
     {
         title: `Theme 2`,
-        image: `assets/cards/card-4/two.png`
+        image: `assets/cards/card-4/two.jpg`
     },
     {
         title: `Theme 3`,
-        image: `assets/cards/card-4/three.png`
+        image: `assets/cards/card-4/three.jpg`
     },
     {
         title: `Theme 4`,
