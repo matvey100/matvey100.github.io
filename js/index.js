@@ -1,3 +1,7 @@
+// Card view
+let playCardFront = document.querySelectorAll(`.play-card-front`);
+let playCardBack = document.querySelectorAll(`.play-card-back`);
+
 // Card 1
 let card1 = document.querySelector(`#card-1`);
 let imgCard1 = document.querySelector(`#img-card-1`);
@@ -117,13 +121,11 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-playButton.addEventListener(`click`, function () {
+function addRandomThemes() {
     let randomCard1Value = getRandomInt(card1Themes.length);
     let randomCard2Value = getRandomInt(card2Themes.length);
     let randomCard3Value = getRandomInt(card3Themes.length);
     let randomCard4Value = getRandomInt(card4Themes.length);
-
-    console.log(randomCard1Value, randomCard2Value, randomCard3Value, randomCard4Value)
 
     titleCard1.innerHTML = card1Themes[randomCard1Value].title;
     titleCard2.innerHTML = card2Themes[randomCard2Value].title;
@@ -134,4 +136,63 @@ playButton.addEventListener(`click`, function () {
     imgCard2.src = card2Themes[randomCard2Value].image;
     imgCard3.src = card3Themes[randomCard3Value].image;
     imgCard4.src = card4Themes[randomCard4Value].image;
+}
+
+function addRotatedClass() {
+    card1.classList.add(`play-card-rotated`);
+    card2.classList.add(`play-card-rotated`);
+    card3.classList.add(`play-card-rotated`);
+    card4.classList.add(`play-card-rotated`);
+}
+
+function removeRotatedClass() {
+    card1.classList.remove(`play-card-rotated`);
+    card2.classList.remove(`play-card-rotated`);
+    card3.classList.remove(`play-card-rotated`);
+    card4.classList.remove(`play-card-rotated`);
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+let count = 0;
+playButton.addEventListener(`click`, function () {
+    for (let i = 0; i < 4; i++) {
+        let cardFront = playCardFront[i];
+        let cardBack = playCardBack[i];
+
+        if (Number(count) === 0) {
+            playButton.innerHTML = `Раздать карты заново`;
+
+            addRandomThemes()
+
+            addRotatedClass()
+
+            setTimeout(function () {
+                cardFront.classList.add(`d-none`);
+                cardBack.classList.remove(`d-none`);
+            }, 250);
+
+        } else {
+            removeRotatedClass()
+
+            setTimeout(function () {
+                cardBack.classList.add(`d-none`);
+                cardFront.classList.remove(`d-none`);
+            }, 250);
+
+            sleep(1000).then(function () {
+                addRandomThemes()
+
+                addRotatedClass()
+
+                setTimeout(function () {
+                    cardFront.classList.add(`d-none`);
+                    cardBack.classList.remove(`d-none`);
+                }, 250);
+            });
+        }
+    }
+    count = 1;
 });
