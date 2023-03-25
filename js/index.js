@@ -27,92 +27,92 @@ let playButton = document.querySelector(`#play-button`);
 
 let card1Themes = [
     {
-        title: `Theme 1`,
+        title: `Тема 1`,
         image: `assets/cards/card-1/one.jpg`
     },
     {
-        title: `Theme 2`,
+        title: `Тема 2`,
         image: `assets/cards/card-1/two.jpg`
     },
     {
-        title: `Theme 3`,
+        title: `Тема 3`,
         image: `assets/cards/card-1/three.jpg`
     },
     {
-        title: `Theme 4`,
+        title: `Тема 4`,
         image: `assets/cards/card-1/four.jpg`
     },
     {
-        title: `Theme 5`,
+        title: `Тема 5`,
         image: `assets/cards/card-1/five.jpg`
     },
 ];
 
 let card2Themes = [
     {
-        title: `Theme 1`,
+        title: `Тема 1`,
         image: `assets/cards/card-2/one.jpg`
     },
     {
-        title: `Theme 2`,
+        title: `Тема 2`,
         image: `assets/cards/card-2/two.jpg`
     },
     {
-        title: `Theme 3`,
+        title: `Тема 3`,
         image: `assets/cards/card-2/three.jpg`
     },
     {
-        title: `Theme 4`,
+        title: `Тема 4`,
         image: `assets/cards/card-2/four.jpg`
     },
     {
-        title: `Theme 5`,
+        title: `Тема 5`,
         image: `assets/cards/card-2/five.jpg`
     },
 ];
 
 let card3Themes = [
     {
-        title: `Theme 1`,
+        title: `Тема 1`,
         image: `assets/cards/card-3/one.jpg`
     },
     {
-        title: `Theme 2`,
+        title: `Тема 2`,
         image: `assets/cards/card-3/two.jpg`
     },
     {
-        title: `Theme 3`,
+        title: `Тема 3`,
         image: `assets/cards/card-3/three.jpg`
     },
     {
-        title: `Theme 4`,
+        title: `Тема 4`,
         image: `assets/cards/card-3/four.jpg`
     },
     {
-        title: `Theme 5`,
+        title: `Тема 5`,
         image: `assets/cards/card-3/five.jpg`
     },
 ];
 
 let card4Themes = [
     {
-        title: `Theme 1`,
+        title: `Тема 1`,
         image: `assets/cards/card-4/one.jpg`
     },
     {
-        title: `Theme 2`,
+        title: `Тема 2`,
         image: `assets/cards/card-4/two.jpg`
     },
     {
-        title: `Theme 3`,
+        title: `Тема 3`,
         image: `assets/cards/card-4/three.jpg`
     },
     {
-        title: `Theme 4`,
+        title: `Тема 4`,
         image: `assets/cards/card-4/four.jpg`
     },
     {
-        title: `Theme 5`,
+        title: `Тема 5`,
         image: `assets/cards/card-4/five.jpg`
     },
 ];
