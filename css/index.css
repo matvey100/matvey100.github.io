@@ -39,11 +39,13 @@ body {
 .how-to-play-cards {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .play-cards {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
