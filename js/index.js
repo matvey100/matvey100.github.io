@@ -159,6 +159,8 @@ function sleep(ms) {
 let count = 0;
 playButton.addEventListener(`click`, function () {
     for (let i = 0; i < 4; i++) {
+        playButton.disabled = true;
+        
         let cardFront = playCardFront[i];
         let cardBack = playCardBack[i];
 
@@ -172,8 +174,8 @@ playButton.addEventListener(`click`, function () {
             setTimeout(function () {
                 cardFront.classList.add(`d-none`);
                 cardBack.classList.remove(`d-none`);
+                playButton.disabled = false;
             }, 250);
-
         } else {
             removeRotatedClass()
 
@@ -190,6 +192,7 @@ playButton.addEventListener(`click`, function () {
                 setTimeout(function () {
                     cardFront.classList.add(`d-none`);
                     cardBack.classList.remove(`d-none`);
+                    playButton.disabled = false;
                 }, 250);
             });
         }
